@@ -1,0 +1,25 @@
+{
+  "name": "@sekp/webpack-version-bump-plugin",
+  "version": "0.0.3",
+  "description": "Webpack Plugin to replace Version Strings from package.json",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaipaysen/webpack-version-bump-plugin.git"
+  },
+  "keywords": [
+    "Webpack",
+    "Plugin",
+    "Version",
+    "Replace"
+  ],
+  "author": "Kai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaipaysen/webpack-version-bump-plugin/issues"
+  },
+  "homepage": "https://github.com/kaipaysen/webpack-version-bump-plugin#readme"
+}
