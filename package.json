@@ -1,6 +1,6 @@
 {
   "name": "@sekp/webpack-version-bump-plugin",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Webpack Plugin to replace Version Strings from package.json",
   "main": "lib/index.js",
   "directories": {

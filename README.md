@@ -19,14 +19,17 @@ plugins: [
         places: [
             {
                 filename: path.resolve(__dirname, "public/serviceworker.js"),
-                find: /^var CACHE_NAME =(.*)$/m,
+                mode: 'after',
+                find: /^var CACHE_NAME =(.*)$/m,                
                 replace: (newVersion) => `var CACHE_NAME = "${newVersion}";`
             }, {
                 filename: path.resolve(__dirname, "package.json"),
+                mode: 'before',
                 find: /^\s*\"version\":.*$/m,
                 replace: (newVersion) => `  "version": "${newVersion}",`
             }, {
                 filename: path.resolve(__dirname, "package-lock.json"),
+                mode: 'before',
                 find: /^\s*\"version\":.*$/m,
                 replace: (newVersion) => `  "version": "${newVersion}",`
             }
